@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  pointage-app:
+    container_name: pointage
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
+    environment:
+      - MONGODB_URI=${MONGODB_URI}
+      - secretKey=${secretKey}
