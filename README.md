@@ -8,6 +8,9 @@ utiliser npm pour l'installation
 npm install
 ```
 Si vous utiliser docker, pull l'image dans dockerhub et le lancer dans docker
+```bash
+docker pull maharo7/pointage-app:pointageimage
+```
 
 ## Utilisation
 Si vous avez telecharger le code sur github :
