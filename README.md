@@ -7,13 +7,13 @@ utiliser npm pour l'installation
 ```bash
 npm install
 ```
-Si vous utiliser docker, pull l'image dans dockerhub et le lancer dans docker
+Si vous utilisé docker, pull l'image dans dockerhub et le lancer dans docker
 ```bash
 docker pull maharo7/pointage-app:pointageimage
 ```
 
 ## Utilisation
-Si vous avez telecharger le code sur github :
+Si vous avez telechargé le code sur github :
 pour lancer l'application :
 ```bash
 npm start
@@ -23,9 +23,9 @@ pour lancer le test :
 npm test
 ```
 
-Utiliser postman ou un logiciel similaire pour envoyer les requettes
+Utiliser postman ou un logiciel similaire pour envoyer les requetes
 
-### Liste des requettes
+### Liste des requetes
 
 ```javascript
 
@@ -38,7 +38,7 @@ Voici les credentials dans le body de ce login :
     "password" : "password"
 }
 
-Ensuite on copie le token dans la réponse et on le met dans : Authorization -> Bearer Token pour les requettes avec les endpoints '/employee'
+Ensuite on copie le token dans la réponse et on le met dans : Authorization -> Bearer Token pour les requetes avec les endpoints '/employee'
 
 # Creer un employé
 POST http://localhost:8081/employee
