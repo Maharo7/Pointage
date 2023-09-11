@@ -85,7 +85,6 @@ exports.checkIn = async (req, res) => {
                 return res.status(404).json({ error: 'L\'ID spécifié n\'est pas valide.' });
             };
             query = { employeeId };
-            console.log("query "+query);
         };
         const employeeData = await checkInCheckOut.find(query);
         if(employeeData === null || employeeData === undefined){

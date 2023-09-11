@@ -23,12 +23,11 @@ exports.getAllEmployee = async (req, res) => {
     try {
         const dateParam = req.query.dateCreated;
         let query = {};
-        console.log('req.query.dateCreated '+req.query.dateCreated);
         if(dateParam){
             const dateCreatedParam = new Date(dateParam);
             const startDate = new Date(dateCreatedParam);
             const endDate = new Date(startDate);
-            endDate.setHours(23, 59, 59, 999); // Définir l'heure à 23:59:59:999 pour couvrir toute la journée
+            endDate.setHours(23, 59, 59, 999); // toute la journée
             query = {
                 dateCreated: {
                     $gte: startDate,
